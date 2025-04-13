@@ -100,3 +100,30 @@ export const updateButton = {
   ...submitButton,
   backgroundColor: "#ff9800",
 };
+
+// fieldStyles.ts
+export const fieldContainer = {
+  marginBottom: "24px",
+  minWidth: "280px",
+  paddingRight: "12px",
+};
+
+export const labelStyle = {
+  display: "flex",
+  alignItems: "center",
+  gap: "6px",
+  marginBottom: "6px",
+  fontWeight: 500,
+};
+
+export const tooltipStyle = {
+  cursor: "pointer",
+  fontSize: "14px",
+  color: "#888",
+};
+
+export const errorStyle = {
+  color: "red",
+  fontSize: "13px",
+  marginTop: "4px",
+};

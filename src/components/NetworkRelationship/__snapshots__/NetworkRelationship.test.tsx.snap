@@ -1,0 +1,190 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`NetworkRelationship > should render correctly and match snapshot 1`] = `
+<div>
+  <div
+    style="padding: 40px;"
+  >
+    <div
+      style="border: 1px solid rgb(224, 224, 224); padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); background-color: rgb(255, 255, 255); margin-bottom: 40px;"
+    >
+      <div
+        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;"
+      >
+        <h3>
+          Network Relationships
+        </h3>
+        <button
+          style="padding: 8px 16px; background-color: rgb(25, 118, 210); color: rgb(255, 255, 255); border-radius: 4px; cursor: pointer;"
+        >
+          + Add
+        </button>
+      </div>
+      <table
+        style="width: 100%; border-collapse: collapse;"
+      >
+        <thead>
+          <tr>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                ID
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Entity
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+              title="Relationship Type: 0(Service Holder), 1(Passport Customer), 2(Acting on a service)"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Relationship Type
+                <span
+                  style="cursor: help; color: rgb(136, 136, 136);"
+                >
+                  ⓘ
+                </span>
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Started On
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Ended On
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                End Reason
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Internal marketing consent
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                External Marketing Consent
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Self Bill
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Days Past Due
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Client Market Segment
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Is Main
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Created By
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Created On
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Updated By
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Updated On
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              Actions
+            </th>
+          </tr>
+        </thead>
+        <tbody />
+      </table>
+    </div>
+  </div>
+</div>
+`;

@@ -9,8 +9,14 @@ const formFields = [
     type: HTMLElementType.text,
     tooltip:
       "LEGAL_ADDRESS for legal address or any other text describing additional address",
+    required: true,
   },
-  { name: "addressLine", label: "Address Line", type: HTMLElementType.text },
+  {
+    name: "addressLine",
+    label: "Address Line",
+    type: HTMLElementType.text,
+    required: true,
+  },
   {
     name: "buildingName",
     label: "Building Name (Optional)",
@@ -22,9 +28,24 @@ const formFields = [
     label: "Special Delivery (Optional)",
     type: HTMLElementType.text,
   },
-  { name: "zipCode", label: "Zip Code", type: HTMLElementType.text },
-  { name: "village", label: "Village", type: HTMLElementType.text },
-  { name: "country", label: "Country", type: HTMLElementType.text },
+  {
+    name: "zipCode",
+    label: "Zip Code",
+    type: HTMLElementType.text,
+    required: true,
+  },
+  {
+    name: "village",
+    label: "Village",
+    type: HTMLElementType.text,
+    required: true,
+  },
+  {
+    name: "country",
+    label: "Country",
+    type: HTMLElementType.text,
+    required: true,
+  },
   {
     name: "completeAddress",
     label: "Complete Address (Optional)",

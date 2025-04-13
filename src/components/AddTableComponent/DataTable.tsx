@@ -1,4 +1,4 @@
-import { tableStyle, thStyle, tdStyle, actionTdStyle } from "./styles";
+import { tableStyle, thStyle, tdStyle, actionTdStyle } from "../styles";
 
 // Define the column type
 type Column = {

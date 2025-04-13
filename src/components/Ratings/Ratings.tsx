@@ -8,6 +8,7 @@ const formFields = [
     label: "Validity Start",
     type: HTMLElementType.datePicker,
     tooltip: "The validity start date of the ratings",
+    required: true,
   },
   {
     name: "validityEnd",
@@ -25,18 +26,20 @@ const formFields = [
     name: "ratingValue",
     label: "Rating Value",
     type: HTMLElementType.text,
+    required: true,
   },
   {
     name: "ratingSubValues",
     label: "Rating Sub Values (Optional)",
     type: HTMLElementType.select,
-    options: ["Test1", "Test2"],
+    options: [{ label: "Test Label", value: "test Value" }],
   },
   {
     name: "ratingTypeCode",
     label: "Rating Type Code",
     type: HTMLElementType.text,
     tooltip: "The code of rating type",
+    required: true,
   },
 ];
 

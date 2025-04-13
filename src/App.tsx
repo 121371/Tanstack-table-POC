@@ -1,14 +1,14 @@
 import { FormProvider, useForm } from "react-hook-form";
-import NetworkRelationship from "./components/NetworkRelationship/NetworkRelationship";
-import Registrations from "./components/Registrations/Registrations";
-import AdditionalAddresses from "./components/AdditionalAddresses/AdditionalAddresses";
-import AddRegistration from "./components/AddRegistration/AddRegistration";
-import BankAccounts from "./components/BankAccounts/BankAccounts";
-import Ratings from "./components/Ratings/Ratings";
+import ThirdPartyTabularSections from "./components/CreateThirdParty/ThirdPartyTabularSections";
 
 const App = () => {
   const methods = useForm({
     defaultValues: {
+      registration: [],
+      ratings: [],
+      bankAccounts: [],
+      networkRelationships: [],
+      additionalAddress: [],
       clientName: "",
       tempForm: {}, // To prevent RHF from auto-triggering validation
     },
@@ -18,6 +18,8 @@ const App = () => {
   const onSubmit = (data: any) => {
     console.log("Final Form Submission:", data);
   };
+
+  console.log("amit", methods?.watch());
 
   return (
     <FormProvider {...methods}>
@@ -35,23 +37,8 @@ const App = () => {
             />
           </div>
 
-          {/* Network Relationships Component */}
-          <NetworkRelationship />
-
-          {/* Registrations Component */}
-          <Registrations />
-
-          {/* Additional Addresses Component */}
-          <AdditionalAddresses />
-
-          {/* Add Registration Component */}
-          <AddRegistration />
-
-          {/* Bank Accounts Component */}
-          <BankAccounts />
-
-          {/* Ratings Component */}
-          <Ratings />
+          {/* This is combination of tabulation section of the third party details */}
+          <ThirdPartyTabularSections />
 
           {/* Submit Button */}
           <button type="submit" style={{ marginTop: 30 }}>

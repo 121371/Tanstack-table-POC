@@ -61,6 +61,7 @@ function NetworkRelationship() {
       label: "Entity",
       type: HTMLElementType.select,
       options: dummyEntityList,
+      required: true,
     },
     {
       name: "type",
@@ -73,11 +74,13 @@ function NetworkRelationship() {
         { label: "1", value: 1 },
         { label: "2", value: 2 },
       ],
+      required: true,
     },
     {
       name: "startedOn",
       label: "Started on",
       type: HTMLElementType.datePicker,
+      required: true,
     },
     {
       name: "endedOn",
@@ -131,14 +134,14 @@ function NetworkRelationship() {
     },
     {
       name: "isMain",
-      label: "Is Main",
+      label: "Is Main (Optional)",
       type: HTMLElementType.checkbox,
     },
   ];
 
   return (
     <div style={{ padding: 40 }}>
-      <AddTableComponent<NetworkRelationship>
+      <AddTableComponent
         title="networkRelationships"
         heading="Network Relationships"
         fetchDataHandler={fetchDataHandler}

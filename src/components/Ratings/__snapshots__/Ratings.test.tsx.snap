@@ -1,0 +1,130 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ratings > should render correctly and match snapshot 1`] = `
+<div>
+  <div
+    style="padding: 40px;"
+  >
+    <div
+      style="border: 1px solid rgb(224, 224, 224); padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); background-color: rgb(255, 255, 255); margin-bottom: 40px;"
+    >
+      <div
+        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;"
+      >
+        <h3>
+          Ratings
+        </h3>
+        <button
+          style="padding: 8px 16px; background-color: rgb(25, 118, 210); color: rgb(255, 255, 255); border-radius: 4px; cursor: pointer;"
+        >
+          + Add
+        </button>
+      </div>
+      <table
+        style="width: 100%; border-collapse: collapse;"
+      >
+        <thead>
+          <tr>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Validity Start
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Validity End
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Comment
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Rating Value
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Rating Sub Values
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Rating Type Code
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Created By
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Created On
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Updated By
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              <span
+                style="display: flex; align-items: center; gap: 4px;"
+              >
+                Updated On
+              </span>
+            </th>
+            <th
+              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
+            >
+              Actions
+            </th>
+          </tr>
+        </thead>
+        <tbody />
+      </table>
+    </div>
+  </div>
+</div>
+`;

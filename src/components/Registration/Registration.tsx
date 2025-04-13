@@ -1,6 +1,14 @@
 import { HTMLElementType } from "../../html-element-type";
 import AddTableComponent from "../AddTableComponent/AddTableComponent";
 
+// Define the Registration interface
+interface Registration {
+  registrationTypeCode: string;
+  code: string;
+  validityStart?: string;
+  validityEnd?: string;
+}
+
 // Define form fields for modal
 const formFields = [
   {
@@ -14,12 +22,14 @@ const formFields = [
       { label: "TAN", value: "TAN" },
       { label: "Other", value: "OTHER" },
     ],
+    required: true,
   },
   {
     name: "code",
     label: "Code",
     type: HTMLElementType.text,
     tooltip: "Enter the registration code or identifier",
+    required: true,
   },
   {
     name: "validityStart",
@@ -47,17 +57,36 @@ const columns = [
   { key: "updatedOn", label: "Updated On" },
 ];
 
-const AddRegistration = () => {
+// Define the fetchDataHandler to get mock data for the registrations
+const fetchDataHandler = (): Registration[] => {
+  return [
+    {
+      registrationTypeCode: "R001",
+      code: "Code 123",
+      validityStart: "2023-01-01",
+      validityEnd: "2023-12-31",
+    },
+    {
+      registrationTypeCode: "R002",
+      code: "Code 456",
+      validityStart: "2023-03-01",
+      validityEnd: "2023-08-31",
+    },
+  ];
+};
+
+const Registration = () => {
   return (
     <div style={{ padding: 40 }}>
-      <AddTableComponent
-        title="Registration"
+      <AddTableComponent<Registration>
+        title="registration"
         heading="Registrations"
         formFields={formFields}
         columns={columns}
+        fetchDataHandler={fetchDataHandler}
       />
     </div>
   );
 };
 
-export default AddRegistration;
+export default Registration;
