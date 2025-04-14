@@ -3,109 +3,122 @@
 exports[`Registration > should render correctly and match snapshot 1`] = `
 <div>
   <div
-    style="padding: 40px;"
+    style="border: 1px solid rgb(224, 224, 224); padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); background-color: rgb(255, 255, 255); margin-bottom: 40px;"
   >
     <div
-      style="border: 1px solid rgb(224, 224, 224); padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); background-color: rgb(255, 255, 255); margin-bottom: 40px;"
+      style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; padding-top: 10px;"
+    >
+      <h3>
+        Registrations
+      </h3>
+      <button
+        style="padding: 8px 16px; background-color: rgb(88, 29, 116); color: rgb(255, 255, 255); border-radius: 4px; cursor: pointer;"
+      >
+        + Add
+      </button>
+    </div>
+    <div
+      style="overflow-x: auto; margin-right: 10px; border: 1px solid rgb(221, 221, 221); border-radius: 4px;"
     >
       <div
-        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;"
+        style="width: 100%; height: 100%; overflow: auto; border: 1px solid rgb(221, 221, 221); border-radius: 8px; background-color: rgb(255, 255, 255); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column;"
       >
-        <h3>
-          Registrations
-        </h3>
-        <button
-          style="padding: 8px 16px; background-color: rgb(25, 118, 210); color: rgb(255, 255, 255); border-radius: 4px; cursor: pointer;"
+        <table
+          style="width: 100%; border-collapse: collapse; table-layout: auto; border-spacing: 0 10px; flex-grow: 1;"
         >
-          + Add
-        </button>
+          <thead>
+            <tr>
+              <th
+                style="text-align: left; border-bottom: 2px solid #ddd; padding: 12px 16px; background-color: rgb(245, 245, 245); min-width: 120px;"
+              >
+                <span
+                  style="display: flex; align-items: center; gap: 4px;"
+                >
+                  Registration Type
+                </span>
+              </th>
+              <th
+                style="text-align: left; border-bottom: 2px solid #ddd; padding: 12px 16px; background-color: rgb(245, 245, 245); min-width: 120px;"
+              >
+                <span
+                  style="display: flex; align-items: center; gap: 4px;"
+                >
+                  Code
+                </span>
+              </th>
+              <th
+                style="text-align: left; border-bottom: 2px solid #ddd; padding: 12px 16px; background-color: rgb(245, 245, 245); min-width: 120px;"
+              >
+                <span
+                  style="display: flex; align-items: center; gap: 4px;"
+                >
+                  Validity Start
+                </span>
+              </th>
+              <th
+                style="text-align: left; border-bottom: 2px solid #ddd; padding: 12px 16px; background-color: rgb(245, 245, 245); min-width: 120px;"
+              >
+                <span
+                  style="display: flex; align-items: center; gap: 4px;"
+                >
+                  Validity End
+                </span>
+              </th>
+              <th
+                style="text-align: left; border-bottom: 2px solid #ddd; padding: 12px 16px; background-color: rgb(245, 245, 245); min-width: 120px;"
+              >
+                <span
+                  style="display: flex; align-items: center; gap: 4px;"
+                >
+                  Created By
+                </span>
+              </th>
+              <th
+                style="text-align: left; border-bottom: 2px solid #ddd; padding: 12px 16px; background-color: rgb(245, 245, 245); min-width: 120px;"
+              >
+                <span
+                  style="display: flex; align-items: center; gap: 4px;"
+                >
+                  Created On
+                </span>
+              </th>
+              <th
+                style="text-align: left; border-bottom: 2px solid #ddd; padding: 12px 16px; background-color: rgb(245, 245, 245); min-width: 120px;"
+              >
+                <span
+                  style="display: flex; align-items: center; gap: 4px;"
+                >
+                  Updated By
+                </span>
+              </th>
+              <th
+                style="text-align: left; border-bottom: 2px solid #ddd; padding: 12px 16px; background-color: rgb(245, 245, 245); min-width: 120px;"
+              >
+                <span
+                  style="display: flex; align-items: center; gap: 4px;"
+                >
+                  Updated On
+                </span>
+              </th>
+              <th
+                style="text-align: left; border-bottom: 2px solid #ddd; padding: 12px 12px; background-color: rgb(245, 245, 245); min-width: 50px; position: sticky; right: 0px; z-index: 2; box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);"
+              >
+                Actions
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                colspan="9"
+                style="text-align: center; padding: 20px; color: rgb(136, 136, 136); font-style: italic; position: sticky; left: 0px; background-color: rgb(255, 255, 255); z-index: 1;"
+              >
+                No data available
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <table
-        style="width: 100%; border-collapse: collapse;"
-      >
-        <thead>
-          <tr>
-            <th
-              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
-            >
-              <span
-                style="display: flex; align-items: center; gap: 4px;"
-              >
-                Registration Type
-              </span>
-            </th>
-            <th
-              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
-            >
-              <span
-                style="display: flex; align-items: center; gap: 4px;"
-              >
-                Code
-              </span>
-            </th>
-            <th
-              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
-            >
-              <span
-                style="display: flex; align-items: center; gap: 4px;"
-              >
-                Validity Start
-              </span>
-            </th>
-            <th
-              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
-            >
-              <span
-                style="display: flex; align-items: center; gap: 4px;"
-              >
-                Validity End
-              </span>
-            </th>
-            <th
-              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
-            >
-              <span
-                style="display: flex; align-items: center; gap: 4px;"
-              >
-                Created By
-              </span>
-            </th>
-            <th
-              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
-            >
-              <span
-                style="display: flex; align-items: center; gap: 4px;"
-              >
-                Created On
-              </span>
-            </th>
-            <th
-              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
-            >
-              <span
-                style="display: flex; align-items: center; gap: 4px;"
-              >
-                Updated By
-              </span>
-            </th>
-            <th
-              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
-            >
-              <span
-                style="display: flex; align-items: center; gap: 4px;"
-              >
-                Updated On
-              </span>
-            </th>
-            <th
-              style="text-align: left; border-bottom: 2px solid #ddd; padding: 10px; background-color: rgb(245, 245, 245);"
-            >
-              Actions
-            </th>
-          </tr>
-        </thead>
-        <tbody />
-      </table>
     </div>
   </div>
 </div>

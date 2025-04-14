@@ -1,4 +1,5 @@
-import { useForm, FieldError, FieldValues } from "react-hook-form";
+import { useForm, FieldValues } from "react-hook-form";
+import { useEffect } from "react";
 import ModalForm from "../ModalForm/ModalForm";
 import { renderField } from "./fieldRenderer";
 import {
@@ -17,6 +18,7 @@ type Props<T extends FieldValues> = {
   onClose: () => void;
   formFields: FormField[];
   onSubmit: (data: T) => void;
+  defaultValues?: T; // Add defaultValues prop
 };
 
 const AddModalForm = <T extends FieldValues>({
@@ -25,17 +27,24 @@ const AddModalForm = <T extends FieldValues>({
   onClose,
   formFields,
   onSubmit,
+  defaultValues,
 }: Props<T>) => {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
     trigger,
     setFocus,
+    reset, // Add reset to reset the form state
   } = useForm<T>({
     mode: "onChange",
   });
+
+  useEffect(() => {
+    if (isOpen) {
+      reset(defaultValues); // Reset the form state with defaultValues when the modal is opened
+    }
+  }, [isOpen, reset, defaultValues]);
 
   const handleFormSubmit = async (data: T) => {
     const isValid = await trigger();
@@ -47,9 +56,10 @@ const AddModalForm = <T extends FieldValues>({
       }
       return;
     }
+    console.log("Form Data Submitted:", data); // Debugging log to inspect submitted data
 
-    onSubmit(data);
-    reset();
+    onSubmit(data); // Directly pass the submitted data
+    onClose(); // Close the modal after successful submission
   };
 
   return (
@@ -64,11 +74,15 @@ const AddModalForm = <T extends FieldValues>({
         >
           {formFields.map((field) => {
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            const error = (errors?.tempForm as any)?.[field.name] as
-              | FieldError
-              | undefined;
+            const error = (errors?.tempForm as any)?.[field.name]; // Ensure error is correctly extracted
             return (
-              <div key={field.name} style={fieldContainer}>
+              <div
+                key={field.name}
+                style={{
+                  ...fieldContainer,
+                  marginRight: "10px", // Add margin between fields
+                }}
+              >
                 <label htmlFor={field.name} style={labelStyle}>
                   {field.label}
                   {field.tooltip && (
@@ -77,8 +91,14 @@ const AddModalForm = <T extends FieldValues>({
                     </span>
                   )}
                 </label>
-                {renderField({ field, register, error })}
-                {error?.message && <p style={errorStyle}>{error.message}</p>}
+                {renderField({
+                  field,
+                  register,
+                  error,
+                  isTabularField: true,
+                })}
+                {error?.message && <p style={errorStyle}>{error.message}</p>}{" "}
+                {/* Display error message */}
               </div>
             );
           })}

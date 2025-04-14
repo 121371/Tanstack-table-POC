@@ -77,15 +77,13 @@ const fetchDataHandler = (): Registration[] => {
 
 const Registration = () => {
   return (
-    <div style={{ padding: 40 }}>
-      <AddTableComponent<Registration>
-        title="registration"
-        heading="Registrations"
-        formFields={formFields}
-        columns={columns}
-        fetchDataHandler={fetchDataHandler}
-      />
-    </div>
+    <AddTableComponent<Registration>
+      title="registration"
+      heading="Registrations"
+      formFields={formFields}
+      columns={columns}
+      fetchDataHandler={fetchDataHandler}
+    />
   );
 };
 

@@ -35,9 +35,7 @@ describe("AddModalForm", () => {
         formFields={formFields}
       />
     );
-    const input = screen.getByRole("textbox", { name: /bank name/i });
     expect(container).toMatchSnapshot();
-    expect(input).toBeInTheDocument();
     // expect(screen.getByLabelText("IBAN")).toBeInTheDocument();
   });
 

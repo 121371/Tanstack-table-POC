@@ -16,7 +16,7 @@ export const headerStyle = {
 
 export const addButton = {
   padding: "8px 16px",
-  backgroundColor: "#1976d2",
+  backgroundColor: "#581d74",
   color: "#fff",
   border: "none",
   borderRadius: 4,
@@ -80,8 +80,8 @@ export const inputStyle = {
 
 export const cancelButton = {
   padding: "8px 16px",
-  backgroundColor: "#ccc",
-  color: "#333",
+  backgroundColor: "#581d74",
+  color: "#fff",
   border: "none",
   borderRadius: 4,
   cursor: "pointer",
@@ -89,7 +89,7 @@ export const cancelButton = {
 
 export const submitButton = {
   padding: "8px 16px",
-  backgroundColor: "#28a745",
+  backgroundColor: "#581d74",
   color: "#fff",
   border: "none",
   borderRadius: 4,
@@ -98,7 +98,7 @@ export const submitButton = {
 
 export const updateButton = {
   ...submitButton,
-  backgroundColor: "#ff9800",
+  backgroundColor: "#581d74",
 };
 
 // fieldStyles.ts

@@ -125,14 +125,12 @@ const columns = [
 
 const BankAccounts = () => {
   return (
-    <div style={{ padding: 40 }}>
-      <AddTableComponent
-        title="bankAccounts"
-        heading="Bank Accounts"
-        formFields={formFields}
-        columns={columns}
-      />
-    </div>
+    <AddTableComponent
+      title="bankAccounts" // Ensure this matches the desired casing
+      heading="Bank Accounts"
+      formFields={formFields}
+      columns={columns}
+    />
   );
 };
 

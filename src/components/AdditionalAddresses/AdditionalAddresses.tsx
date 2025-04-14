@@ -78,14 +78,12 @@ const columns = [
 
 const AdditionalAddresses = () => {
   return (
-    <div style={{ padding: 40 }}>
-      <AddTableComponent
-        title="additionalAddresses"
-        heading="Additional Addresses"
-        formFields={formFields}
-        columns={columns}
-      />
-    </div>
+    <AddTableComponent
+      title="additionalAddresses" // Ensure this matches the desired casing
+      heading="Additional Addresses"
+      formFields={formFields}
+      columns={columns}
+    />
   );
 };
 

@@ -59,14 +59,12 @@ const columns = [
 
 const Ratings = () => {
   return (
-    <div style={{ padding: 40 }}>
-      <AddTableComponent
-        title="ratings"
-        heading="Ratings"
-        formFields={formFields}
-        columns={columns}
-      />
-    </div>
+    <AddTableComponent
+      title="ratings"
+      heading="Ratings"
+      formFields={formFields}
+      columns={columns}
+    />
   );
 };
 

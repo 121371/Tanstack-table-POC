@@ -8,19 +8,24 @@ interface RenderFieldProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   register: UseFormRegister<any>;
   error?: FieldError;
+  isTabularField?: boolean; // Flag to indicate if the field is a tabular field
 }
 
-export const renderField = ({ field, register, error }: RenderFieldProps) => {
+export const renderField = ({
+  field,
+  register,
+  error,
+  isTabularField,
+}: RenderFieldProps) => {
+  const fieldName = isTabularField
+    ? `tempForm.${field.name}` // Ensure fields are scoped under tempForm.<title>
+    : field.name;
+
   const commonProps = {
-    // We use "tempForm" to isolate modal form fields from the main form state.
-    // This ensures that temporary input values from the modal don't interfere with the parent form's structure,
-    // especially when using useFormContext + useFieldArray in the parent component.
-    //Support user has opened the Modal and filled some fields but cancelled it, in this case it will not capture in actual formState until i click on the subkit button of the modal form
-    ...register(
-      `tempForm.${field.name}`,
-      field.required ? { required: `${field.label} is required` } : {}
-    ),
-    id: field.name,
+    ...register(fieldName, {
+      required: field.required ? `${field.label} is required` : undefined, // Add validation rule for required fields
+    }),
+    id: fieldName,
     style: {
       borderColor: error ? "red" : "#ccc",
       padding: "8px",

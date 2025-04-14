@@ -140,43 +140,41 @@ function NetworkRelationship() {
   ];
 
   return (
-    <div style={{ padding: 40 }}>
-      <AddTableComponent
-        title="networkRelationships"
-        heading="Network Relationships"
-        fetchDataHandler={fetchDataHandler}
-        formFields={formFields} // Pass formFields using enum types
-        columns={[
-          { key: "id", label: "ID" },
-          { key: "sgGroupEntity", label: "Entity" },
-          {
-            key: "type",
-            label: "Relationship Type",
-            tooltip:
-              "Relationship Type: 0(Service Holder), 1(Passport Customer), 2(Acting on a service)",
-          },
-          { key: "startedOn", label: "Started On" },
-          { key: "endedOn", label: "Ended On" },
-          { key: "endReason", label: "End Reason" },
-          {
-            key: "internalMarketingConsent",
-            label: "Internal marketing consent",
-          },
-          {
-            key: "externalMarketingConsent",
-            label: "External Marketing Consent",
-          },
-          { key: "selfBill", label: "Self Bill" },
-          { key: "daysPastDue", label: "Days Past Due" },
-          { key: "clientMarketSegment", label: "Client Market Segment" },
-          { key: "isMain", label: "Is Main" },
-          { key: "createdBy", label: "Created By" },
-          { key: "createdOn", label: "Created On" },
-          { key: "updatedBy", label: "Updated By" },
-          { key: "updatedOn", label: "Updated On" },
-        ]}
-      />
-    </div>
+    <AddTableComponent
+      title="networkRelationships"
+      heading="Network Relationships"
+      fetchDataHandler={fetchDataHandler}
+      formFields={formFields} // Pass formFields using enum types
+      columns={[
+        { key: "id", label: "ID" },
+        { key: "sgGroupEntity", label: "Entity" },
+        {
+          key: "type",
+          label: "Relationship Type",
+          tooltip:
+            "Relationship Type: 0(Service Holder), 1(Passport Customer), 2(Acting on a service)",
+        },
+        { key: "startedOn", label: "Started On" },
+        { key: "endedOn", label: "Ended On" },
+        { key: "endReason", label: "End Reason" },
+        {
+          key: "internalMarketingConsent",
+          label: "Internal marketing consent",
+        },
+        {
+          key: "externalMarketingConsent",
+          label: "External Marketing Consent",
+        },
+        { key: "selfBill", label: "Self Bill" },
+        { key: "daysPastDue", label: "Days Past Due" },
+        { key: "clientMarketSegment", label: "Client Market Segment" },
+        { key: "isMain", label: "Is Main" },
+        { key: "createdBy", label: "Created By" },
+        { key: "createdOn", label: "Created On" },
+        { key: "updatedBy", label: "Updated By" },
+        { key: "updatedOn", label: "Updated On" },
+      ]}
+    />
   );
 }
 
